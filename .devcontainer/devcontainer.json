@@ -18,6 +18,14 @@
 			]
 		}
 	},
+	"mounts": [
+		{
+			// update this path in your devcontainer json file to reflect your ssh key so that git over ssh can work
+			"source": "/home/shaikuma/.ssh",
+			"target": "/home/vscode/.ssh",
+			"type": "bind"
+		}
+	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [9000],
 	// Use 'portsAttributes' to set default properties for specific forwarded ports. 
