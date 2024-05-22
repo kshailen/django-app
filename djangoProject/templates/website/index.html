@@ -1,16 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %}
 
-<head>
-    <title>Django Templates</title>
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
-</head>
+{% block title %}
+    Home Page - django App
+{% endblock %}
 
-<body>
-
-    <h1>Django Template Demo</h1>
-
-</body>
-
-</html>
+{% block content %}
+<h1> this is home Page of Danjo App</h1>
+{% endblock %}
