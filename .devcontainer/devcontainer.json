@@ -14,7 +14,8 @@
 			"extensions": [
 				"streetsidesoftware.code-spell-checker",
 				"batisteo.vscode-django",
-				"pushqrdx.inline-html"
+				"pushqrdx.inline-html",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	},
@@ -37,7 +38,7 @@
 		}
 	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install -r requirements.txt"
+	"postCreateCommand": "pip3 install -r requirements.txt && sudo apt-get update && sudo apt-get install -y nodejs npm || true"
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
